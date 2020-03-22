@@ -1,0 +1,17 @@
+h1{
+  color: red !important;
+}
+
+.imgLocations{
+  display: flex;
+  flex-direction: row;
+}
+
+.singleImg{
+  flex-direction: column;
+}
+
+div img{
+  width: 100%;
+  border-radius: 2%;
+}

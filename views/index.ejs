@@ -1,0 +1,17 @@
+<%- include("partials/header") -%>
+    <title>Pixabay Image Search</title>
+<%- include("partials/middle") -%>
+
+<% if(imageLinks.length === 4) {%>
+  <div class="imgLocations">
+    <% imageLinks.forEach((curImgData) => { %>
+      <div class="singleImg">
+        <p>Likes: <%= curImgData.likes %> </p>
+        <img src="<%= curImgData.url %>" />
+      </div>
+    <% }); %>
+  <% } else { %>
+    <p id="warningMes" class="bg-warning"> Not enough images returned from search to fill page.</p>
+  <% } %>
+
+<%- include("partials/footer") -%>
